@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.objectFactory" value="spring"></constant>
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="login" class="CusAction" method="login">
+		    <result name="failure">/Login.jsp</result>
+			<result name="login Admin">/success.jsp</result>
+			<result name="login Cashier">/success.jsp</result>
+			<result name="login Buyer">/success.jsp</result>
+			<result name="login customer">/success.jsp</result>
+			<result name="success">/success.jsp</result> 			
+		</action>
+	</package>
+
+</struts>
